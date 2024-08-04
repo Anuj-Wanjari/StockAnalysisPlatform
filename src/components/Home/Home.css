@@ -1,0 +1,13 @@
+.home {
+    padding: 20px;
+    margin-top: 60px; /* To avoid overlap with the fixed navbar */
+  }
+  
+  .home h1 {
+    color: #333;
+  }
+  
+  .home p {
+    font-size: 1.2em;
+  }
+  

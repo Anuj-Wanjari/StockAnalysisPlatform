@@ -1,0 +1,14 @@
+/* Learn.css */
+.learn {
+    padding: 20px;
+    margin-top: 60px; /* To avoid overlap with the fixed navbar */
+  }
+  
+  .learn h1 {
+    color: #333;
+  }
+  
+  .learn p {
+    font-size: 1.2em;
+  }
+  

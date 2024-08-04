@@ -1,0 +1,21 @@
+/* SectorDetail.css */
+.sector-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .sector-detail h1 {
+    margin-bottom: 20px;
+  }
+  
+  .sector-detail p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .sector-detail div {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
