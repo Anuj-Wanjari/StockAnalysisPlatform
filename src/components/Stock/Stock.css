@@ -1,4 +1,3 @@
-/* Stock.css */
 .stock-sectors {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +20,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #f0f8ff; /* Light blue background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -43,11 +43,13 @@
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #333; /* Dark gray for text */
 }
 
 .card-text {
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #555; /* Medium gray for text */
 }
 
 .list-group {
@@ -84,6 +86,7 @@
 
 .popup h2 {
   margin-bottom: 20px;
+  color: #333; /* Dark gray for text */
 }
 
 .popup-buttons {
@@ -97,8 +100,10 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background: #007acc; /* Blue background for buttons */
+  color: white; /* White text for buttons */
 }
 
 .popup-buttons button:hover {
-  background: #ddd;
+  background: #005f8c; /* Darker blue on hover */
 }

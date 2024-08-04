@@ -1,21 +1,29 @@
-/* SectorDetail.css */
 .sector-detail {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .sector-detail h1 {
-    margin-bottom: 20px;
-  }
-  
-  .sector-detail p {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-  }
-  
-  .sector-detail div {
-    font-size: 1em;
-    line-height: 1.5;
-  }
-  
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
+  max-width: 800px;
+  margin: auto; /* Center horizontally within the viewport */
+  background-color: #f0f8ff; /* Light blue background to match Home page */
+  text-align: center; /* Center-align text */
+}
+
+.sector-detail h1 {
+  font-size: 2.5rem; /* Font size for the main title */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.sector-detail p {
+  font-size: 1.5rem; /* Increased font size for paragraphs */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 20px;
+}
+
+.sector-detail div {
+  font-size: 1.2rem; /* Increased font size for text inside divs */
+  color: #333; /* Consistent dark text color */
+  line-height: 1.5; /* Improved readability with line height */
+}

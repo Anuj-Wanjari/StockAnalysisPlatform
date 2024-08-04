@@ -1,30 +1,66 @@
+/* Navbar Container */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for the navbar */
+  padding: 15px 30px; /* Increased padding for a more spacious feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  display: flex;
+  justify-content: space-between; /* Space between brand and links */
+  align-items: center; /* Align items vertically center */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Navbar Brand */
+.navbar .nav-brand {
+  color: #fff; /* White text for better contrast */
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+/* Navbar List */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar List Items */
+.navbar .nav-links li {
+  margin: 0 20px; /* Increased space between items */
+}
+
+/* Navbar Links */
+.navbar a {
+  color: #fff; /* White text for better contrast */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover and Active Link Styles */
+.navbar a:hover,
+.navbar .active-link {
+  background-color: #555; /* Darker background on hover and active */
+  color: #fff; /* Maintain white text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px; /* Adjust padding for a more compact layout */
   }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  .navbar .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    align-items: center; /* Center items horizontally */
   }
-  
-  .navbar li {
-    display: inline;
+
+  .navbar .nav-links li {
+    margin: 10px 0; /* Adjust margin for vertical layout */
   }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-  }
-  
-  .navbar .active-link {
-    background-color: #555;
-  }
-  
+}
