@@ -1,5 +1,5 @@
 // Stock.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Stock.css';
 
 import nifty50Image from '../../images/nifty50.jpg';
@@ -26,6 +26,23 @@ import fertilizers_agro_chemicalsImage from '../../images/fertilizers_agro_chemi
 import cementImage from '../../images/cement.jpg';
 
 const Stock = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [hasPopupBeenShown, setHasPopupBeenShown] = useState(false);
+
+  useEffect(() => {
+    if (!hasPopupBeenShown) {
+      setShowPopup(true);
+      setHasPopupBeenShown(true);
+    }
+  }, [hasPopupBeenShown]);
+
+  const handlePopupClose = () => {
+    setShowPopup(false);
+  };
+
+  const handleLearnNow = () => {
+    window.location.href = '/learn'; // Redirect to the learn page
+  };
   const sectorData = [
     {
       image: nifty50Image,
@@ -274,6 +291,17 @@ const Stock = () => {
 
   return (
     <div className="stock-sectors">
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup">
+            <h2>Learn how to select Stock from list!</h2>
+            <div className="popup-buttons">
+              <button onClick={handleLearnNow}>Learn Now</button>
+              <button onClick={handlePopupClose}>Ok</button>
+            </div>
+          </div>
+        </div>
+      )}
       {sectorData.map((sector, index) => (
         <a key={index} href={sector.link} target="_blank" rel="noopener noreferrer" className="card-link">
           <div className="card sector-card">
