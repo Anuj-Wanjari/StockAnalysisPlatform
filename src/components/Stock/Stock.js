@@ -41,7 +41,7 @@ const Stock = () => {
   };
 
   const handleLearnNow = () => {
-    window.location.href = '/learn'; // Redirect to the learn page
+    window.location.href = '/learn'; 
   };
   const sectorData = [
     {
@@ -294,6 +294,7 @@ const Stock = () => {
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup">
+            <h1 style={{ color: '#ff0000' }}>Alert!!</h1>
             <h2>Learn how to select Stock from list!</h2>
             <div className="popup-buttons">
               <button onClick={handleLearnNow}>Learn Now</button>
