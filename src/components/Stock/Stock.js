@@ -53,7 +53,7 @@ const Stock = () => {
         'Blue-chip companies',
         'High liquidity',
       ],
-      link: 'https://www.tickertape.in/screener/equity/user/ZpF7TiENeLPVEIjl#overlay-custom-universe',
+      link: 'https://www.tickertape.in/screener/equity/user/ZpF7TiENeLPVEIjl',
     },
     {
       image: nifty100Image,
@@ -64,7 +64,7 @@ const Stock = () => {
         'Broader market representation',
         'Diverse sectors',
       ],
-      link: 'https://example.com/nifty100',
+      link: 'https://www.tickertape.in/screener/equity/user/ZrBrTHpDbz8NVaVV',
     },
     {
       image: consumer_staplesImage,
@@ -75,7 +75,7 @@ const Stock = () => {
         'Alchol, Beverages, & Soft Drinks',
         'Seed, Sugar, & Agro Products',
       ],
-      link: 'https://example.com/consumer-staples',
+      link: 'https://www.tickertape.in/screener/equity/user/ZrBywEVJirmSJkMB',
     },
     {
       image: consumer_discretionaryImage,
@@ -131,7 +131,7 @@ const Stock = () => {
         'System Integration',
         'Outsourcing & Efficiency',
       ],
-      link: 'https://example.com/it-services',
+      link: 'https://www.tickertape.in/screener/equity/user/ZrCBjoA7_wYD8CkK',
     },
     {
       image: software_servicesImage,
